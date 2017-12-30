@@ -1,5 +1,4 @@
 
-
 object Histoobj extends App {
    def convert(n:Int):(Int,Int,Int,Int)={ // Import de convert, greyLevel et ConvertBack de Nathan
       var a=n
@@ -29,16 +28,16 @@ object Histoobj extends App {
       return (t*Math.pow(2,24).toInt+r*Math.pow(2,16).toInt+g*Math.pow(2,8).toInt+b)
   }
   def HistoNB(Src:Array[Array[Int]]):Array[Int]={ //Modelise un histogramme (Tableau 1D de taille 256) d'une image N&B 
-    greyLevel(Src,0.299,0.587,0.114) //Convertie l'image d'entrée en image N&B
-    var Histo=Array.fill(256)(0) //L'Histo est modelisé par un tableau 1D où la valeur de chaque index i correspond au nombre de pixel d'intensité i.
+    greyLevel(Src,0.299,0.587,0.114) //Convertie l'image d'entre en image N&B
+    var Histo=Array.fill(256)(0) //L'Histo est modelis par un tableau 1D o la valeur de chaque index i correspond au nombre de pixel d'intensit i.
     var height = Src.length
     var width = Src(0).length
     for (row <-0 to height-1){
       for (col <-0 to width-1){
-        var (t,r,g,b)=convert(Src(row)(col))  //Convertie chaque valeur de pixel en entier compris entre 0 et 255 ("Intensité du pixel")
+        var (t,r,g,b)=convert(Src(row)(col))  //Convertie chaque valeur de pixel en entier compris entre 0 et 255 ("Intensit du pixel")
         
         if (r<0){
-          Histo(-r)=Histo(-r)+1 //Construit l'histo. Si la valeur est negative (Erreur dans le convert de Nathan), prend l'opposé.
+          Histo(-r)=Histo(-r)+1 //Construit l'histo. Si la valeur est negative (Erreur dans le convert de Nathan), prend l'oppos.
         }
         else{
         Histo(r)= Histo(r)+1
@@ -53,8 +52,8 @@ object Histoobj extends App {
       println(Histo(i))
       
     }
-    var (t,r,g,b)=convert(Src(450)(450))
-    print(r)
+    //var (t,r,g,b)=convert(Src(450)(450))
+    //print(r)
     return Histo
   }
   
