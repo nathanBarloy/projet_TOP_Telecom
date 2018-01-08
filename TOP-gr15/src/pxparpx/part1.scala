@@ -22,7 +22,7 @@ object part1 {
   }
   
   def convert(n:Int):(Int,Int,Int,Int)={
-    /*converti l'entier représentant le pixel en un quadruplet (transparence,rouge,vert,bleu)
+    /*convertit l'entier représentant le pixel en un quadruplet (transparence,rouge,vert,bleu)
      * on fait pour cela du décalage de bits
      */
     var t = (n >> 24) & 0xFF
