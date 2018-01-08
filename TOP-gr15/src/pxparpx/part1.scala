@@ -19,18 +19,15 @@ object part1 {
   }
   
   def convert(n:Int):(Int,Int,Int,Int)={
-    var a=n
-    var t=(a/Math.pow(2,24)).toInt
-    a -= t*(Math.pow(2,24).toInt)
-    var r=(a/Math.pow(2,16)).toInt
-    a -= r*(Math.pow(2,16).toInt)
-    var g=(a/Math.pow(2,8)).toInt
-    a -= g*(Math.pow(2,8).toInt)
-    var b=a
+  
+    var t = (n >> 24) & 0xFF
+    var r = (n >> 16) & 0xFF
+    var g = (n >> 8) & 0xFF
+    var b = n & 0xFF
     return (t,r,g,b)
   }
   
   def convertBack(t:Int,r:Int,g:Int,b:Int):Int={
-    return (t*Math.pow(2,24).toInt+r*Math.pow(2,16).toInt+g*Math.pow(2,8).toInt+b)
+    return ((t << 24) + (r << 16) + (g << 8) + b)
   }
 }
