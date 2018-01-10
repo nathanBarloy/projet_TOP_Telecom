@@ -1,0 +1,16 @@
+2018-01-10 12:56:04,328  WARN [ModalContext] - ScalaProject - Project TOP-gr15 has platform default sourceLevel.
+2018-01-10 12:56:04,330  WARN [ModalContext] - ScalaProject - Project TOP-gr15 runs on platform default installation.
+2018-01-10 12:56:04,743  WARN [ModalContext] - ScalaProject - Project TOP-gr15 has platform default sourceLevel.
+2018-01-10 12:56:04,743  WARN [ModalContext] - ScalaProject - Project TOP-gr15 runs on platform default installation.
+2018-01-10 12:56:05,286 ERROR [Worker-5] - System.err - log4j:WARN No appenders could be found for logger (org.eclipse.jgit.util.FS).
+2018-01-10 12:56:05,287 ERROR [Worker-5] - System.err - log4j:WARN Please initialize the log4j system properly.
+2018-01-10 12:56:13,122 ERROR [main] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-01-10 12:56:13,125 ERROR [main] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-01-10 12:56:13,181 ERROR [main] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-01-10 12:56:13,182 ERROR [main] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-01-10 12:56:32,715 ERROR [main] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-01-10 12:56:32,715 ERROR [main] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-01-10 12:56:32,717 ERROR [main] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-01-10 12:56:32,717 ERROR [main] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-01-10 12:56:32,864 ERROR [main] - IScalaPresentationCompiler$ - Ignoring InterruptException
+2018-01-10 12:56:34,050 ERROR [main] - IScalaPresentationCompiler$ - Ignoring InterruptException
