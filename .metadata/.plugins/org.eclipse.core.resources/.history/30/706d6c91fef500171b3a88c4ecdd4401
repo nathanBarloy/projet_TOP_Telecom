@@ -23,6 +23,7 @@ object Main {
     //pxparpx.part1.greyLevel(image2D)
     var wrappedMotif : ImageWrapper = new ImageWrapper("test/test15/motif.png")
     var motif2D=wrappedMotif.getImage()
+    println("marche stp")
     //var liste=time{pxparpx.part8_5.rechercheHisto(image2D,motif2D)}
    // pxparpx.resultat.imageAvecCarres(wrappedImage,wrappedMotif,liste,"test/test15/resultat.png")
     ////pxparpx.part1.greyLevel(motif2D)
