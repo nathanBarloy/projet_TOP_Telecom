@@ -1,0 +1,1 @@
+test non concluant conversion en niveau de gris
