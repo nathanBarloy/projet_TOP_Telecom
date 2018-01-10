@@ -8,18 +8,27 @@ object Main {
     
     
     //mettre des choses ici
+    def time[R](block: => R): R = {  
+        val t0 = System.nanoTime()
+        val result = block    // call-by-name
+        val t1 = System.nanoTime()
+        println("Elapsed time: " + (t1 - t0) + "ns")
+        result
+    }
     
     
-    var wrappedImage : ImageWrapper = new ImageWrapper("test/test13/image.png")
+    var wrappedImage : ImageWrapper = new ImageWrapper("test/test15/image.png")
     
     var image2D=wrappedImage.getImage()
     //pxparpx.part1.greyLevel(image2D)
-    var wrappedMotif : ImageWrapper = new ImageWrapper("test/test13/motif.png")
+    var wrappedMotif : ImageWrapper = new ImageWrapper("test/test15/motif.png")
     var motif2D=wrappedMotif.getImage()
+    var liste=time{pxparpx.part8_5.rechercheHisto(image2D,motif2D)}
+    pxparpx.resultat.imageAvecCarres(wrappedImage,wrappedMotif,liste,"test/test15/resultat.png")
     ////pxparpx.part1.greyLevel(motif2D)
     
     
-    pxparpx.part10.carteChaleur(wrappedImage,wrappedMotif,"test/test13/resultat.png")
+    //pxparpx.part10.carteChaleur(wrappedImage,wrappedMotif,"test/test13/resultat.png")
     
     
    /* var wrappedImage : ImageWrapper = new ImageWrapper("test/test04/image.png")

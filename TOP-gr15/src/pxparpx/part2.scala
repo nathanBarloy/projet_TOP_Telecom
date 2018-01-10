@@ -9,7 +9,7 @@ object part2 {
   
   
   
-  def pxParPxNB(img:Array[Array[Int]],motif:Array[Array[Int]]):List[Array[Int]]={
+  def pxParPx(img:Array[Array[Int]],motif:Array[Array[Int]]):List[Array[Int]]={
     
 	/* Ce programme prend en paramètres une image et un motif de plus petite taille 
 	 * et vérifie que le motif appartient bien à l'image, puis retourne toutes les positions 

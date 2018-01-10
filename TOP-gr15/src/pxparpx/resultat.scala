@@ -15,7 +15,7 @@ object resultat {
 		var hmot=motif.height;	
 		var new_image: Array[Array[Int]]= img.getImage();
 		for(dim <- liste_occurrences){
-			for(j <- 0 to wmot-1){								//On traite les bords supérieur et inférieur
+			for(j <- 0 to wmot-1){	 //On traite les bords supérieur et inférieur
 				new_image(dim(0))(dim(1)+j)=0xFFFF0000;
 				new_image(dim(0)+hmot-1)(dim(1)+j)=0xFFFF0000;
 			}
